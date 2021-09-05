@@ -78,8 +78,9 @@ p {
 
 
 
+/* media query pour passer en version mobile  */
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 600px), screen and (min-width: 400px) {
     /* Resets */
 html,
 body {
@@ -93,6 +94,7 @@ body {
 /* Taille de toutes les images <img ...>  */
 img {
     width: 45%;
+    margin-top: 3%;
 }
  
 /* Container flexbox : direction "column" avec alignement au milieu */
@@ -129,13 +131,15 @@ img {
 }
  
 h1 {
-    font-size: 24px;
+    font-size: 100px;
     color: white;
+    margin-bottom: 0%;
 }
  
 h3 {
-    font-size: 20px;
+    font-size: 45px;
     color: white;
+    margin-bottom: 5%;
 }
  
 p {
@@ -154,7 +158,19 @@ p {
 .secTitle > .images {
     flex: 1 0 0%;
     margin-right: 0px;
+    text-align: center;
+    margin-top: 3%;
+    
+}
+
+.image5{
     width: 1150px;
+}
+
+.text{
+    padding: 5%;
+    font-family: sans-serif;
+    margin-bottom: 10%;
 }
     }
   
