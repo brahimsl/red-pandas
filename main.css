@@ -1,22 +1,42 @@
-/* Section principale */
-section {
+/* Resets */
+html,
+body {
+    margin: 0;
     background-color: #c29b62;
 }
 
 /* Taille de toutes les images <img ...>  */
 img {
-    max-width: 50px;
+    width: 45%;
 }
 
-/* Div de la partie carré avec images */
-.popupImg {
+/* Container flexbox : direction "column" avec alignement au milieu */
+.container {
     display: flex;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 300px;
-    background-color: orange;
+    flex-direction: column;
+    align-items: center;
 }
 
-.popupImg > img {
-    flex: 50%;
+/* Carré principal contenant les images en flexbox avec l'ombre porté et le contour arrondi du carré */
+.carre {
+    background-color: orange;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 16px;
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,.5);
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+
+/* Image fixe du panda en haut à droite */
+.fixedPanda {
+    position: fixed;
+    width: 100px;
+    top: 10px;
+    right: 10px;
 }
