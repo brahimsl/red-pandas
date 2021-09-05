@@ -1,0 +1,22 @@
+/* Section principale */
+section {
+    background-color: #c29b62;
+}
+
+/* Taille de toutes les images <img ...>  */
+img {
+    max-width: 50px;
+}
+
+/* Div de la partie carré avec images */
+.popupImg {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+}
+
+.popupImg > img {
+    flex: 50%;
+}
