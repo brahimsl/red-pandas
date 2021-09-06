@@ -1,19 +1,18 @@
-/* Resets */
-html,
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
- 
+
 body {
     background-color: #c29b62;
 }
- 
+
 /* Taille de toutes les images <img ...>  */
 img {
     width: 45%;
     margin-top: 3%;
 }
- 
+
 /* Container flexbox : direction "column" avec alignement au milieu */
 .container {
     display: flex;
@@ -21,7 +20,7 @@ img {
     align-items: center;
     margin: 50px 0 50px 0;
 }
- 
+
 /* Carré principal contenant les images en flexbox avec l'ombre porté et le contour arrondi du carré */
 .carre {
     background-color: orange;
@@ -37,7 +36,7 @@ img {
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
- 
+
 /* Image fixe du panda en haut à droite */
 .fixedPanda {
     position: fixed;
@@ -45,22 +44,24 @@ img {
     top: 10px;
     right: 10px;
 }
- 
+
 h1 {
-    font-size: 24px;
+    font-size: 26px;
     color: white;
+    margin: 10px 0 0 0;
 }
- 
+
 h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+    margin: 0 0 10px 0;
 }
- 
+
 p {
     font-size: 16px;
     color: white;
 }
- 
+
 .secTitle {
     display: flex;
     flex-direction: row;
@@ -70,14 +71,41 @@ p {
     padding: 30px;
     margin: 50px auto;
 }
- 
+
 .secTitle > .images {
     flex: 1 0 0%;
     margin-right: 16px;
 }
 
-.image5{
+.image5 {
     width: 300px;
+}
+
+
+/* regles de responsivité de passage sur mobile  */
+
+@media screen and (max-width: 600px) {
+
+    .carre {
+        height: auto;
+        width: auto;
+        margin: 20px; 
+    }
+
+    .secTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .secTitle > .images {
+        margin-right: 0;
+    }
+
+    .image5 {
+        width: 100%;
+    }
 }
 
 
